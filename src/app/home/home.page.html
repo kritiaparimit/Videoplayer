@@ -1,0 +1,20 @@
+<ion-header color = "primary">
+  <ion-toolbar color = "primary">
+    <ion-title color = "light">
+      Video Player
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <video controls id = "video">
+    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"/>
+  </video>
+
+  <a style="color: #000000; font-size: 18px; padding-left: 16px">Big Buck Bunny animation clip</a> <br>
+  <a style="color: #000000; font-size: 12px; padding-left: 16px">2nd April 2020</a>
+  <ion-icon name="heart" (click) = "favorite()" [color]="color" style="font-size: 16px; padding-left: 8px"></ion-icon>
+
+  <div id = "col2"></div>
+
+</ion-content>
